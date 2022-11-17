@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Demo4ka"
         mc:Ignorable="d"
-        Title="Авторизация" Height="515" Width="365" ResizeMode="NoResize">
+        Title="Авторизация" Height="515" Width="365" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
     <Window.Background>
         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
             <GradientStop Color="#ffffff" Offset="0"/>
@@ -95,7 +95,7 @@
                  VerticalAlignment="Top"/>-->
 
 
-        <TextBox Grid.Row="1" Name="Login" VerticalAlignment="Top" Margin="25, 35, 25, 0"
+        <TextBox Grid.Row="1" x:Name="Login" VerticalAlignment="Top" Margin="25, 35, 25, 0"
                  Height="30" FontFamily="Comic Sans MS" FontSize="14"/>
         <PasswordBox Grid.Row="1" x:Name="Password" VerticalAlignment="Top" Margin="25, 95, 25, 0"
                      Height="30" FontFamily="Comic Sans MS" FontSize="14"/>
@@ -106,7 +106,7 @@
 
         <Button Grid.Row="1" x:Name="SignIn" VerticalAlignment="Bottom" HorizontalAlignment="Center"
                 Margin="25, 0, 25, 100" Height="30" Width="150" BorderThickness="1" Content="ВОЙТИ"
-                FontFamily="Comic Sans MS" FontSize="16" Background="#349c3d"/>
+                FontFamily="Comic Sans MS" FontSize="16" Background="#349c3d" Click="SignIn_Click"/>
 
         <TextBlock x:Name="Registration" Grid.Row="1" Text="У Вас нет аккаунта?" VerticalAlignment="Bottom"
                    HorizontalAlignment="Center" Margin="0, 0, 0, 80" FontFamily="Comic Sans MS" FontSize="12"

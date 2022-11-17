@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Demo4ka"
         mc:Ignorable="d"
-        Title="Регистрация" Height="515" Width="365">
+        Title="Регистрация" Height="515" Width="365" WindowStartupLocation="CenterScreen">
 
     <Window.Background>
         <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
@@ -43,7 +43,7 @@
 
         <Button Grid.Row="1" x:Name="SignUp" VerticalAlignment="Bottom" HorizontalAlignment="Center"
                 Margin="25, 0, 25, 100" Height="30" Width="150" BorderThickness="1" Content="РЕГИСТРАЦИЯ"
-                FontFamily="Comic Sans MS" FontSize="16" Background="#349c3d"/>
+                FontFamily="Comic Sans MS" FontSize="16" Background="#349c3d" Click="SignUp_Click"/>
 
         <TextBlock x:Name="Reg" Grid.Row="1" Text="У Вас уже есть аккаунт?" VerticalAlignment="Bottom"
                    HorizontalAlignment="Center" Margin="0, 0, 0, 80" FontFamily="Comic Sans MS" FontSize="12"
