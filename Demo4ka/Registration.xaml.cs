@@ -23,5 +23,21 @@ namespace Demo4ka
         {
             InitializeComponent();
         }
+
+        private void Image_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.ChangedButton == MouseButton.Left)
+            {
+                this.DragMove();
+            }
+        }
+
+        private void Reg_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            MainWindow auth = new MainWindow();
+            auth.Show();
+            this.Close();
+        }
+
     }
 }

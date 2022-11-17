@@ -108,7 +108,7 @@
                 Margin="25, 0, 25, 100" Height="30" Width="150" BorderThickness="1" Content="ВОЙТИ"
                 FontFamily="Comic Sans MS" FontSize="16" Background="#349c3d"/>
 
-        <TextBlock x:Name="Registration" Grid.Row="1" Text="У вас уже есть аккаунт?" VerticalAlignment="Bottom"
+        <TextBlock x:Name="Registration" Grid.Row="1" Text="У Вас нет аккаунта?" VerticalAlignment="Bottom"
                    HorizontalAlignment="Center" Margin="0, 0, 0, 80" FontFamily="Comic Sans MS" FontSize="12"
                    Foreground="Blue" MouseLeftButtonDown="Registration_MouseLeftButtonDown"/>
 

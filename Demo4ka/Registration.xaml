@@ -5,8 +5,50 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Demo4ka"
         mc:Ignorable="d"
-        Title="Registration" Height="515" Width="365">
+        Title="Регистрация" Height="515" Width="365">
+
+    <Window.Background>
+        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+            <GradientStop Color="#ffffff" Offset="0"/>
+            <GradientStop Color="#76e383" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
+
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Polygon Fill="Black" Opacity="0.2"
+                 Points="107, 0,
+                 115, 7,
+                 239, 7,
+                 250, 0">
+        </Polygon>
+
+        <Grid Name="Regis" Grid.Row="0">
+            <Image Source="Source/Registration.png" 
+                   Margin="0, 15, 0, 15" MouseDown="Image_MouseDown"/>
+        </Grid>
+
+        <TextBox Grid.Row="1" Name="Login" VerticalAlignment="Top" Margin="25, 35, 25, 0"
+                 Height="30" FontFamily="Comic Sans MS" FontSize="14"/>
+        <PasswordBox Grid.Row="1" x:Name="Password" VerticalAlignment="Top" Margin="25, 95, 25, 0"
+                     Height="30" FontFamily="Comic Sans MS" FontSize="14"/>
+        <Label Name="LoginLabel" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" Content="Введите логин"
+               Margin="25, 10, 0, 0" FontFamily="Comic Sans MS" FontSize="11"/>
+        <Label Name="PasswordLabel" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" Content="Введите пароль"
+               Margin="25, 70, 0, 0" FontFamily="Comic Sans MS" FontSize="11"/>
+
+        <Button Grid.Row="1" x:Name="SignUp" VerticalAlignment="Bottom" HorizontalAlignment="Center"
+                Margin="25, 0, 25, 100" Height="30" Width="150" BorderThickness="1" Content="РЕГИСТРАЦИЯ"
+                FontFamily="Comic Sans MS" FontSize="16" Background="#349c3d"/>
+
+        <TextBlock x:Name="Reg" Grid.Row="1" Text="У Вас уже есть аккаунт?" VerticalAlignment="Bottom"
+                   HorizontalAlignment="Center" Margin="0, 0, 0, 80" FontFamily="Comic Sans MS" FontSize="12"
+                   Foreground="Blue" MouseLeftButtonDown="Reg_MouseLeftButtonDown"/>
+
+
     </Grid>
 </Window>
