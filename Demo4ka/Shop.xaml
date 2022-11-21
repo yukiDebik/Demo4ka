@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:uc="clr-namespace:Demo4ka.UserControls"
         xmlns:local="clr-namespace:Demo4ka"
         mc:Ignorable="d"
         Title="Shop" Height="700" Width="1180" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
@@ -34,9 +35,29 @@
         </StackPanel>
         
         <!--Products-->
-        <StackPanel Grid.Row="1">
-            
-        </StackPanel>
+        <Grid Margin="0 15 0 0" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="1" Width="700" Height="150" VerticalAlignment="Top">
+            <!--
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="150"/>
+                <ColumnDefinition Width="100"/>
+            </Grid.ColumnDefinitions>
+            -->
+
+            <Ellipse Height="110" Width="110" Margin="15 10 0 10" HorizontalAlignment="Left">
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="{Binding Path=Source, ElementName=product}"/>
+                </Ellipse.Fill>
+            </Ellipse>
+
+            <!--
+            <TextBlock Grid.Column="0" Text="{Binding Path=Source,ElementName=product}"/>
+            <TextBlock Grid.Column="1" Text="{Binding Path=Title,ElementName=product}" FontWeight="SemiBold" FontSize="16" FontFamily="Comic Sans MS" VerticalAlignment="Center"/>
+            <TextBlock Grid.Column="1" Text="{Binding Path=Ref,ElementName=product}" FontSize="11" VerticalAlignment="Center" Margin="0 38 0 0" Foreground="#909090" />
+            <TextBlock Grid.Column="2" Text="{Binding Path=Color,ElementName=product}" FontSize="16" VerticalAlignment="Center" Margin="0 38 0 0" Foreground="#909090" />
+            -->
+
+        </Grid>
 
     </Grid>
 </Window>

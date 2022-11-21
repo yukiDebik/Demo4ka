@@ -61,7 +61,7 @@
     <Compile Include="Shop.xaml.cs">
       <DependentUpon>Shop.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\Product.xaml.cs">
+    <Compile Include="UserControls\Product.xaml.cs">
       <DependentUpon>Product.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
@@ -84,7 +84,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControl\Product.xaml">
+    <Page Include="UserControls\Product.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -121,6 +121,17 @@
   <ItemGroup>
     <Resource Include="Source\Registration.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="Source\Goods\C745H6.png" />
+    <Resource Include="Source\Goods\G735G6.png" />
+    <Resource Include="Source\Goods\G753H6.png" />
+    <Resource Include="Source\Goods\H648T5.jpg" />
+    <Resource Include="Source\Goods\H745G5.jpg" />
+    <Resource Include="Source\Goods\K674F4.jpg" />
+    <Resource Include="Source\Goods\N745G4.jpg" />
+    <Resource Include="Source\Goods\O735F5.jpg" />
+    <Resource Include="Source\Goods\Y354G6.jpg" />
+    <Resource Include="Source\Goods\А112Т4.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
