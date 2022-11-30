@@ -36,26 +36,16 @@
         
         <!--Products-->
         <Grid Margin="0 15 0 0" HorizontalAlignment="Center" Grid.Column="0" Grid.Row="1" Width="700" Height="150" VerticalAlignment="Top">
-            <!--
+
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="150"/>
-                <ColumnDefinition Width="150"/>
-                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="450"/>
+                <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
-            -->
 
-            <Ellipse Height="110" Width="110" Margin="15 10 0 10" HorizontalAlignment="Left">
-                <Ellipse.Fill>
-                    <ImageBrush ImageSource="{Binding Path=Source, ElementName=product}"/>
-                </Ellipse.Fill>
-            </Ellipse>
+            <Image Grid.Column="0" Source="Source/Goods/C745H6.png"/>
 
-            <!--
-            <TextBlock Grid.Column="0" Text="{Binding Path=Source,ElementName=product}"/>
-            <TextBlock Grid.Column="1" Text="{Binding Path=Title,ElementName=product}" FontWeight="SemiBold" FontSize="16" FontFamily="Comic Sans MS" VerticalAlignment="Center"/>
-            <TextBlock Grid.Column="1" Text="{Binding Path=Ref,ElementName=product}" FontSize="11" VerticalAlignment="Center" Margin="0 38 0 0" Foreground="#909090" />
-            <TextBlock Grid.Column="2" Text="{Binding Path=Color,ElementName=product}" FontSize="16" VerticalAlignment="Center" Margin="0 38 0 0" Foreground="#909090" />
-            -->
+            <Label Grid.Column="1" Content="Описание товара" FontFamily="Comic Sans MS" FontSize="20"/>
 
         </Grid>
 
